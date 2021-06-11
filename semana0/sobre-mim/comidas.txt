@@ -1,0 +1,12 @@
+Comidas Favoritas:
+
+01 - Churrasco
+02 - Lasanha
+03 - Estrogonofe (não sei se é assim que escreve)
+04 - Torta de BIS
+05 - Bolo
+06 - Pão de Queijo Caseiro
+07 - Biscoito de Polvilho Caseiro
+08 - Pamonha de Sal
+09 - Torta de Frango
+10 - Hambúrguer
