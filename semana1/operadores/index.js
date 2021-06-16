@@ -63,4 +63,19 @@ const idadeHoras = idadeDias * 24
 console.log('Sua idade em horas é:', idadeHoras, 'horas! (e contando...)')
 */
 
+// ---------- Programa 04 ----------
+
+/*
+primeiroNum = Number(prompt('Informe um número qualquer:'))
+segundoNum = Number(prompt('Agora informe outro número, diferente do primeiro:'))
+quest1 = primeiroNum > segundoNum
+console.log('O primeiro número é maior que o segundo?', quest1)
+quest2 = primeiroNum === segundoNum
+console.log('O primeiro número é igual ao segundo?', quest2)
+quest3 = primeiroNum % segundoNum
+console.log('O primeiro número é divisível pelo segundo?', quest3 === 0)
+quest4 = segundoNum % primeiroNum
+console.log('O segundo número é divisível pelo primeiro?', quest4 === 0)
+*/
+
 // ---------- FIM DO EXERCÍCIO DO DIA ----------
