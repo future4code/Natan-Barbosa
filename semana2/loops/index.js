@@ -18,9 +18,7 @@
 
 // -----------------------------------| Exercícios de escrita de código |--------------------------------------
 
-/*
 // ---------- ESCRITA 01 ----------
-
 
 const bichinhos = Number(prompt('Olá usuário! Quantos bichinhos de estimação você tem?'))
 const totalDePets = []
@@ -41,25 +39,25 @@ verificarPets = (numero) => {
 }
 
 verificarPets(bichinhos)
-*/
 
-/*
 // ---------- ESCRITA 02 ----------
 
 const arrayOriginal = [3, 4, 7, 12, 16]
 
-
 // ----------  (item a)  ----------
+
 for (let numero of arrayOriginal) {
     console.log(numero)
 }
 
 // ----------  (item b)  ----------
+
 for (let numero of arrayOriginal) {
     console.log(numero / 2)
 }
 
 // ----------  (item c)  ----------
+
 const novoArrayNumerosPar = () => {
     let novoArray = []
     for (let numero of arrayOriginal) {
@@ -74,7 +72,6 @@ const novoArrayNumerosPar = () => {
 
 novoArrayNumerosPar()
 
-
 // ----------  (item d)  ----------
 
 const novoArrayDeStrings = () => {
@@ -87,4 +84,28 @@ const novoArrayDeStrings = () => {
 }
 
 novoArrayDeStrings()
-*/
+
+// ----------  (item e)  ----------
+
+let maiorNumero = -Infinity
+let menorNumero = Infinity
+
+for (let numero of arrayOriginal) {
+    if (numero > maiorNumero) {
+        maiorNumero = numero
+    } else {
+
+    }
+}
+
+for (let numero of arrayOriginal) {
+    if (numero < menorNumero) {
+        menorNumero = numero
+    } else {
+
+    }
+}
+
+console.log(`O maior número é o ${maiorNumero} e o menor é ${menorNumero}.`)
+
+//////////////////////////////////// FIM DOS EXERCÍCIOS DO DIA 23/06/2021 /////////////////////////////////////
