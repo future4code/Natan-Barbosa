@@ -48,6 +48,7 @@ div img {
 
 .botao-amarelo:hover {
     background-color: #c44f00;
+    position: relative;
 }
 
 .container {
