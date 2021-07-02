@@ -1,0 +1,34 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    background-color: #154fad;
+    color: white;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.botao-mensagem {
+    background-color: grey;
+    color: white;
+    border-color: grey;
+
+    border-radius: 15px;
+    border-style: double;
+
+    font-style: normal;
+    font-weight: bold;
+}
+
+.botao-mensagem:hover { /* quando passa o mouse por cima do botão */
+    background-color: #44535c;
+    color:white;
+    border-color: #44535c ;
+}
+
+.botao-mensagem:active { /* quando clica no botão */
+    background-color: #3c3a52;
+    color: white;
+    border-color: #3c3a52; 
+}
