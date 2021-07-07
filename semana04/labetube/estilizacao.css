@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #202124;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+header {
+    background-color: #ed1c16;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 25pt;
+}
+
+footer {
+    background-color: #ed1c16;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: center;
+    height: 8vh;
+
+    padding-top: 5vh;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    font-weight: bold;
+    
+}
+
+a > img{
+    width: 287px;
+    height: 144px;
+}
+
+.menu-principal {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.cx-pesquisa {
+    height: 25px;
+    width: 200px;
+
+    color: grey;
+    background-color: black;
+    
+    border: 1px black;
+    border-radius: 30px;
+    
+    padding: 2px;
+
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.icone-pesquisa{
+    width: 30px;
+
+    margin-bottom: 18px;
+    margin-top: 0;
+}
+
+.alinhamento-pesquisa {
+    display: flex;
+    align-items: flex-end;
+}
+
+.card {
+    border: 2px solid white;
+    padding: 5px;
+}
+
+#grade-videos {
+    display: grid;
+    height: 100vh;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 12px;
+}
+
+#centralizar-elementos {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#centralizar-texto-grade {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#tamanho-do-video {
+    height: 26.5vw;
+}
+
+
+
+
