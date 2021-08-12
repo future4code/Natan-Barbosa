@@ -1,18 +1,31 @@
 import React from 'react';
 import { HomePage } from './Pages/HomePage/HomePage';
 import { MatchesPage } from './Pages/MatchesPage/MatchesPage';
+import { useState } from 'react';
 
 const App = () => {
-  // renderização condicional
-  // estado que diz qual é a tela que está aparecendo
-  // função pra mudar de tela
-  
+
+  const home = <HomePage />
+  const matches = <MatchesPage />
+
+  const [paginaAtual, setPaginaAtual] = useState(home)
+
+  const irParaMatches = () => {
+    setPaginaAtual(matches)
+  }
+
+  const irParaHome = () => {
+    setPaginaAtual(home)
+  }
+
   return (
 
     <div>
-      Astromatch
-      <HomePage />
-      <MatchesPage />
+
+      <button onClick={irParaMatches}> Ver Matches </button>
+      <button onClick={irParaHome}> Voltar pra Home </button>
+      <div>{paginaAtual}</div>
+
     </div>
   )
 
