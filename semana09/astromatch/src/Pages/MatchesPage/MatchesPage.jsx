@@ -1,18 +1,21 @@
 import React from 'react';
 import { CardDeMatches } from './StylesMatchesPage';
-import { MiniCardMatches } from './StylesMatchesPage';
+import { MiniProfile } from './MiniProfile';
 
 export const MatchesPage = () => {
     return (
         <div>
             <CardDeMatches>
 
-                <MiniCardMatches> Match 01 </MiniCardMatches>
-                <MiniCardMatches> Match 01 </MiniCardMatches>
-                <MiniCardMatches> Match 01 </MiniCardMatches>
-                <MiniCardMatches> Match 01 </MiniCardMatches>
+                <MiniProfile />
+                <MiniProfile />
+                <MiniProfile />
+                <MiniProfile />
+                <MiniProfile />
 
-                <hr /><br />
+                <br /> <br /> <br /> <br />
+
+                <hr />                
 
                 <button>Limpar Matches</button>
                 

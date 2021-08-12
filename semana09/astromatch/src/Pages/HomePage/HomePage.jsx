@@ -19,7 +19,7 @@ export const HomePage = () => {
 
                 <br />
 
-                <img src='https://picsum.photos/330/350?random=1' alt='foto-do-usuario' />
+                <img src='https://picsum.photos/330/350' alt='foto-do-usuario' />
 
                 <br /><br />
 
@@ -32,8 +32,8 @@ export const HomePage = () => {
                 <div>Descrição do usuário ...</div>
 
                 <p>
-                    <button>Dislike</button>
-                    <button>Like</button>
+                    <button> ❤️ </button>
+                    <button> 👎 </button>
                 </p>
 
             </CardPrincipal>
