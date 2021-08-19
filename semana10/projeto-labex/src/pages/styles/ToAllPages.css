@@ -1,0 +1,14 @@
+.center-all {
+    text-align: center;
+    margin: auto;
+    
+}
+
+@font-face {
+    font-family: "Roboto"; 
+    src: url('../../assets/Roboto-Regular.ttf');
+}
+
+.font-default {
+    font-family: "Roboto";
+}

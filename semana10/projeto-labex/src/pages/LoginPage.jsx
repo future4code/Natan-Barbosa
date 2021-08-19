@@ -1,12 +1,16 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import { createGlobalStyle } from 'styled-components';
+import { Header } from '../components/header/Header';
+import { DefaultButton } from '../components/Buttons';
+import './styles/ToAllPages.css'
 
-const Pattern = createGlobalStyle`
+const Default = createGlobalStyle`
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 `
 export const LoginPage = () => {
@@ -22,38 +26,28 @@ export const LoginPage = () => {
     }
 
     return (
-        <><Pattern />
-
-            <h1>
-                Login Page
-            </h1>
+        <>
+            <Default />
 
             <header>
-
-                <div>Header com imagem de galáxia e logo do LabeX</div>
-
+                <Header />
             </header>
 
-            <main>
+            <main className="center-all font-default">
+
+                <br /><h1>Faça login para continuar:</h1><br />
 
                 <section>
 
-                    <h1>Faça login para continuar:</h1>
-
-                    <button onClick={goToHomePage}> Voltar </button>
-
+                    <DefaultButton onClick={goToHomePage}> Voltar </DefaultButton>
                 </section>
 
                 <section>
-
                     <div>
                         Formuláio de login
                     </div>
-
-                    <button onClick={goToAdminHomePage}> Entrar </button>
-
+                    <DefaultButton onClick={goToAdminHomePage}> Entrar </DefaultButton>
                 </section>
-
             </main>
 
         </>

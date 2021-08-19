@@ -1,12 +1,16 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import { createGlobalStyle } from 'styled-components';
+import { Header } from '../components/header/Header';
+import { DefaultButton } from '../components/Buttons';
+import './styles/ToAllPages.css'
 
-const Pattern = createGlobalStyle`
+const Default = createGlobalStyle`
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 `
 
@@ -22,38 +26,28 @@ export const ListTripsPage = () => {
         history.push("/application-form")
     }
 
-
     return (
-        <><Pattern />
-
-            <h1>
-                List Trips Page
-            </h1>
+        <>
+            <Default />
 
             <header>
-
-                <div>Header com imagem de galáxia e logo do LabeX</div>
-
+                <Header />
             </header>
 
-            <main>
+            <main className="center-all font-default">
+
+                <br /><h1>Ao infinito... e além!</h1><br />
 
                 <section>
+                    <DefaultButton onClick={goToHomePage}> Voltar </DefaultButton>
 
-                    <h1>Ao infinito... e além!</h1>
-
-                    <button onClick={goToHomePage}> Voltar </button>
-
-                    <button onClick={goToApplicationPage}> Inscreva-se! </button>
-
+                    <DefaultButton onClick={goToApplicationPage}> Inscreva-se! </DefaultButton>
                 </section>
 
                 <section>
-
                     <div>
                         Cards com as viagens disponíveis
                     </div>
-
                 </section>
 
             </main>

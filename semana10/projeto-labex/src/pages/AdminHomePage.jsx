@@ -1,12 +1,16 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import { createGlobalStyle } from 'styled-components';
+import { Header } from '../components/header/Header';
+import { DefaultButton } from '../components/Buttons';
+import './styles/ToAllPages.css'
 
-const Pattern = createGlobalStyle`
+const Default = createGlobalStyle`
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+        
 }
 `
 
@@ -27,44 +31,34 @@ export const AdminHomePage = () => {
     }
 
     return (
-        <><Pattern />
-
-            <h1>
-                Admin Home Page
-            </h1>
+        <>
+            <Default />
 
             <header>
-
-                <div>Header com imagem de galáxia e logo do LabeX</div>
-
+                <Header />
             </header>
 
-            <main>
+            <main className="center-all font-default" >
+
+                <br /><h1> Painel Administrativo </h1><br />
 
                 <section>
+                    <DefaultButton onClick={goToLoginPage}> Voltar </DefaultButton>
 
-                    <h1>Painel Administrativo</h1>
-
-                    <button onClick={goToLoginPage}> Voltar </button>
-
-                    <button onClick={goToCreateTripPage}> Criar Viagem </button>
-
+                    <DefaultButton onClick={goToCreateTripPage}> Criar Viagem </DefaultButton>
                 </section>
 
                 <section>
-
                     <div>
                         Cards de viagens criadas
                     </div>
 
-                    <button onClick={showTripDetails}>
+                    <DefaultButton onClick={showTripDetails}>
                         Ver Detalhes da Viagem
-                    </button>
-
+                    </DefaultButton>
                 </section>
 
             </main>
-
         </>
     )
 }

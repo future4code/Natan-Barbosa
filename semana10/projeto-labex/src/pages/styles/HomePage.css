@@ -1,0 +1,26 @@
+#wallpaper {
+    background-image: url('../../img/earth-wallpaper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0px -95px;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+
+.text {
+    margin-bottom: 8.3vh;
+    color: white;
+    font-weight: bold;
+
+}
+
+.buttons-homepage {
+    margin-top: 35vh;
+    margin-bottom: 30vh;
+    
+}

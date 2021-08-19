@@ -1,4 +1,61 @@
-/* * {
-    margin: 0;
-    padding: 0;
-} */
+.header { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
+    background-color: #0b0433;
+    color: white;
+
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@font-face {
+    font-family: "Audiowide";
+    src: url('../../assets/Audiowide-Regular.ttf');   
+}
+
+@font-face {
+    font-family: "Roboto"; 
+    src: url('../../assets/Roboto-Regular.ttf');
+}
+
+#logo-name {
+    font-size: 30pt;
+    font-family: "Audiowide";
+}
+
+.slogan {
+    font-size: 12pt;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.logo-img {
+    height: 60px;
+    width: 60px;
+    margin-left: 15px;
+}
+
+.about-link {
+    font-size: 12pt;
+    font-family: "Roboto";
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+}
+
+.about-link:visited {
+    color:purple;
+}
+
