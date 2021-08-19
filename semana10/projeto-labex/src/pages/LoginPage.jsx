@@ -1,6 +1,6 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import "../assets/styles.css"
+import { useHistory } from 'react-router';
+import { createGlobalStyle } from 'styled-components';
 
 const Pattern = createGlobalStyle`
 * {
@@ -9,18 +9,52 @@ const Pattern = createGlobalStyle`
     box-sizing: border-box;
 }
 `
-
 export const LoginPage = () => {
+
+    const history = useHistory();
+
+    const goToHomePage = () => {
+        history.push("/")
+    }
+
+    const goToAdminHomePage = () => {
+        history.push("/admin-home")
+    }
+
     return (
         <><Pattern />
 
-            <div className="testeRouter">
+            <h1>
                 Login Page
-            </div>
+            </h1>
 
-            <button>
-                Botão
-            </button>
+            <header>
+
+                <div>Header com imagem de galáxia e logo do LabeX</div>
+
+            </header>
+
+            <main>
+
+                <section>
+
+                    <h1>Faça login para continuar:</h1>
+
+                    <button onClick={goToHomePage}> Voltar </button>
+
+                </section>
+
+                <section>
+
+                    <div>
+                        Formuláio de login
+                    </div>
+
+                    <button onClick={goToAdminHomePage}> Entrar </button>
+
+                </section>
+
+            </main>
 
         </>
     )

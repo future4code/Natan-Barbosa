@@ -1,6 +1,6 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import "../assets/styles.css"
+import { useHistory } from 'react-router-dom';
+import { createGlobalStyle } from 'styled-components';
 
 const Pattern = createGlobalStyle`
 * {
@@ -9,17 +9,33 @@ const Pattern = createGlobalStyle`
     box-sizing: border-box;
 }
 `
-
 const HomePage = () => {
+
+    const history = useHistory();
+
+    const goToTripsPage = () => {
+        history.push("/list-trips")
+    }
+
+    const goToLoginPage = () => {
+        history.push("/login")
+    }
+
     return (
         <><Pattern />
 
-            <div className="testeRouter">
-                Home Page
+            <div>
+
+                <div> Home Page </div>
+
+                <div>
+                    <button onClick={goToLoginPage}> Login </button>
+                </div>
+
             </div>
 
-            <button> 
-                Botão 
+            <button onClick={goToTripsPage}>
+                Ver Viagens!
             </button>
 
         </>

@@ -1,6 +1,6 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import "../assets/styles.css"
+import { useHistory } from 'react-router';
+import { createGlobalStyle } from 'styled-components';
 
 const Pattern = createGlobalStyle`
 * {
@@ -11,15 +11,22 @@ const Pattern = createGlobalStyle`
 `
 
 export const TripDetailsPage = () => {
+
+    const history = useHistory()
+
+    const goToPreviousPage = () => {
+        history.goBack()
+    }
+
     return (
         <><Pattern />
 
-            <div className="testeRouter">
+            <div>
                 Trip Details Page
             </div>
 
-            <button>
-                Botão
+            <button onClick={goToPreviousPage}>
+                Voltar
             </button>
 
         </>

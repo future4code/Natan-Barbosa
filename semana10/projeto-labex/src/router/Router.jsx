@@ -18,32 +18,32 @@ export const Router = () => {
             <BrowserRouter>
                 <Switch>
 
-                    <Route>
-                        <HomePage exact path={"/"} />
+                    <Route exact path={"/"} >
+                        <HomePage />
                     </Route>
 
-                    <Route>
-                        <AdminHomePage exact path={"/admin"} />
+                    <Route exact path={"/admin-home"} >
+                        <AdminHomePage />
                     </Route>
 
-                    <Route>
-                        <ApplicationFormPage exact path={"/"} />
+                    <Route exact path={"/application-form"} >
+                        <ApplicationFormPage />
                     </Route>
 
-                    <Route>
-                        <CreateTripPage exact path={"/"} />
+                    <Route exact path={"/create-trip"} >
+                        <CreateTripPage />
                     </Route>
 
-                    <Route>
-                        <ListTripsPage exact path={"/"} />
+                    <Route exact path={"/list-trips"} >
+                        <ListTripsPage />
                     </Route>
 
-                    <Route>
-                        <LoginPage exact path={"/"} />
+                    <Route exact path={"/login"} >
+                        <LoginPage />
                     </Route>
 
-                    <Route>
-                        <TripDetailsPage exact path={"/"} />
+                    <Route exact path={"/trip-details"} >
+                        <TripDetailsPage />
                     </Route>
 
                 </Switch>

@@ -1,6 +1,6 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import "../assets/styles.css"
+import { useHistory } from 'react-router';
+import { createGlobalStyle } from 'styled-components';
 
 const Pattern = createGlobalStyle`
 * {
@@ -11,16 +11,52 @@ const Pattern = createGlobalStyle`
 `
 
 export const ListTripsPage = () => {
+
+    const history = useHistory();
+
+    const goToHomePage = () => {
+        history.push("/")
+    }
+
+    const goToApplicationPage = () => {
+        history.push("/application-form")
+    }
+
+
     return (
         <><Pattern />
 
-            <div className="testeRouter">
+            <h1>
                 List Trips Page
-            </div>
+            </h1>
 
-            <button>
-                Botão
-            </button>
+            <header>
+
+                <div>Header com imagem de galáxia e logo do LabeX</div>
+
+            </header>
+
+            <main>
+
+                <section>
+
+                    <h1>Ao infinito... e além!</h1>
+
+                    <button onClick={goToHomePage}> Voltar </button>
+
+                    <button onClick={goToApplicationPage}> Inscreva-se! </button>
+
+                </section>
+
+                <section>
+
+                    <div>
+                        Cards com as viagens disponíveis
+                    </div>
+
+                </section>
+
+            </main>
 
         </>
     )
