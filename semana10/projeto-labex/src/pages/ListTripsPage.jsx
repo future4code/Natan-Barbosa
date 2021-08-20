@@ -4,6 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 import { Header } from '../components/header/Header';
 import { DefaultButton } from '../components/Buttons';
 import './styles/ToAllPages.css'
+import './styles/ListTripsPage.css'
 
 const Default = createGlobalStyle`
 * {
@@ -45,7 +46,7 @@ export const ListTripsPage = () => {
                 </section>
 
                 <section>
-                    <div>
+                    <div class='container'>
                         Cards com as viagens disponíveis
                     </div>
                 </section>

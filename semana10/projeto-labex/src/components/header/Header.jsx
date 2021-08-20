@@ -12,7 +12,7 @@ export const Header = (props) => {
             <div className="logo">
 
                 <div id="logo-name">
-                    <strong>LabeX</strong>
+                    <strong>L A B E X</strong>
                 </div>
 
                 <div>
@@ -22,9 +22,8 @@ export const Header = (props) => {
             </div>
 
             <div className="slogan">
-                Encontre as melhores viagens espaciais! <br/>
-                Saiba mais <a href="https://www.google.com.br" target="_blank" className='about-link'>sobre nós</a>.
-            </div> 
+                Encontre as melhores viagens espaciais! <br /> Se preferir, <a href="https://www.linkedin.com/in/natanbenfica/" target="_blank" className='about-link'>clique aqui</a>, <br/> e fale diretamente com o CEO!
+            </div>
 
         </div>
     )

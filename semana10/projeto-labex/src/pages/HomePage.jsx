@@ -38,16 +38,14 @@ const HomePage = () => {
 
             <main className="center-all font-default" id="wallpaper">
 
-
                 <div className="buttons-homepage">
                     <HomePageButton onClick={goToTripsPage}> Ver Viagens </HomePageButton>
 
-                    <HomePageButton onClick={goToLoginPage}> Adm Login </HomePageButton>
+                    <HomePageButton onClick={goToLoginPage} title="ACESSO RESTRITO AOS ADMINISTRADORES"> Adm Login </HomePageButton>
                 </div>
 
-                <div className="text">
-                    Desde 2021, voando mais alto, com mais segurança (e mais barato) do que Elon Musk e Jeff Bezos
-                </div>
+                <span id="text"> Desde 2021, voando com mais segurança, mais alto, mais rápido (e mais barato) do que Elon Musk ou Jeff Bezos</span>
+
             </main>
 
         </>

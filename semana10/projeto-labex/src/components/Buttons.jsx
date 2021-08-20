@@ -10,6 +10,7 @@ export const DefaultButton = styled.button`
     padding: 5px 10px;
     font-weight: bold;
     margin: 5px;
+    width: 150px;
 }
 :hover {
     background-color: purple;
@@ -24,12 +25,11 @@ export const HomePageButton = styled.button`
 & {
     background-color: #0b0433;
     color: white;
-    border: 1px solid #0b0433;
-  
+    border: 1px solid #0b0433;  
     padding: 5px 10px;
-    
     margin: 5px;
     font-size: 50px;
+    width: 300px
 }
 :hover {
     background-color: purple;
