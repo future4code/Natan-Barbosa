@@ -11,7 +11,6 @@ const Default = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
 }
 `
 
@@ -28,31 +27,149 @@ export const ListTripsPage = () => {
     }
 
     return (
-        <>
-            <Default />
+        <div id="background-pages"><Default />
 
             <header>
                 <Header />
             </header>
 
-            <main className="center-all font-default">
+            <main className="font-default">
 
-                <br /><h1>Ao infinito... e além!</h1><br />
+                <section className='center-all'>
 
-                <section>
+                    <h1 id="main-titles">Ao infinito... e além!</h1>
+
                     <DefaultButton onClick={goToHomePage}> Voltar </DefaultButton>
 
-                    <DefaultButton onClick={goToApplicationPage}> Inscreva-se! </DefaultButton>
+                    
+
                 </section>
 
                 <section>
+
                     <div class='container'>
-                        Cards com as viagens disponíveis
+
+                        <div id='card-group'>
+                            <h3> Card de Viagem com lista </h3>
+                            <ul>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ul>
+                            <DefaultButton onClick={goToApplicationPage}> Inscreva-se! </DefaultButton>
+                        </div>
+
+                        <div id='card-group'>
+                            <h3> Card de Viagem com lista </h3>
+                            <ul>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ul>
+                            <DefaultButton onClick={goToApplicationPage}> Inscreva-se! </DefaultButton>
+                        </div>
+                        <div id='card-group'>
+                            <h3> Card de Viagem com lista </h3>
+                            <ul>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ul>
+                            <DefaultButton onClick={goToApplicationPage}> Inscreva-se! </DefaultButton>
+                        </div>
+                        <div id='card-group'>
+                            <h3> Card de Viagem com lista </h3>
+                            <ul>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ul>
+                            <DefaultButton onClick={goToApplicationPage}> Inscreva-se! </DefaultButton>
+                        </div>
+                        <div id='card-group'>
+                            <h3> Card de Viagem com lista </h3>
+                            <ul>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ul>
+                            <DefaultButton onClick={goToApplicationPage}> Inscreva-se! </DefaultButton>
+                        </div>
+                        <div id='card-group'>
+                            <h3> Card de Viagem com lista </h3>
+                            <ul>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ul>
+                            <DefaultButton onClick={goToApplicationPage}> Inscreva-se! </DefaultButton>
+                        </div>
+                        <div id='card-group'>
+                            <h3> Card de Viagem com lista </h3>
+                            <ul>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ul>
+                            <DefaultButton onClick={goToApplicationPage}> Inscreva-se! </DefaultButton>
+                        </div>
+
+                        <div id='card-group'>
+                            <h3> Card de Viagem com lista </h3>
+                            <ul>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ul>
+                            <DefaultButton onClick={goToApplicationPage}> Inscreva-se! </DefaultButton>
+                        </div>
+
+                        <div id='card-group'>
+                            <h3> Card de Viagem com lista </h3>
+                            <ul>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ul>
+                            <DefaultButton onClick={goToApplicationPage}> Inscreva-se! </DefaultButton>
+                        </div>
+
+                        <div id='card-group'>
+                            <h3> Card de Viagem com lista </h3>
+                            <ul>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                                <li>item</li>
+                            </ul>
+                            <DefaultButton onClick={goToApplicationPage}> Inscreva-se! </DefaultButton>
+                        </div>
+
                     </div>
+
                 </section>
 
             </main>
 
-        </>
+        </div>
     )
 }

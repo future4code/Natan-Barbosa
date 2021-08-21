@@ -3,12 +3,16 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: 0px -95px;
-    padding-bottom: 2px;
+
+    height: 87.8vh;
+    width: 100vw;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+
+    padding-bottom: 11px;
 
 }
 
@@ -26,4 +30,10 @@
 .buttons-homepage {
     margin-top: 33vh;
     margin-bottom: 30vh;
+
+}
+
+.hide-overflow {
+    overflow: auto;
+    
 }

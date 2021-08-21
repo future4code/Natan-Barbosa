@@ -13,6 +13,7 @@ const Default = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
       
 }
 `
@@ -29,7 +30,7 @@ const HomePage = () => {
     }
 
     return (
-        <>
+        <div className="hide-overflow">
             <Default />
 
             <header>
@@ -44,11 +45,11 @@ const HomePage = () => {
                     <HomePageButton onClick={goToLoginPage} title="ACESSO RESTRITO AOS ADMINISTRADORES"> Adm Login </HomePageButton>
                 </div>
 
-                <span id="text"> Desde 2021, voando com mais segurança, mais alto, mais rápido (e mais barato) do que Elon Musk ou Jeff Bezos</span>
+                <span id="text"> Desde 2021, voando mais alto, mais rápido (e mais barato) do que Elon Musk e Jeff Bezos</span>
 
             </main>
 
-        </>
+        </div>
     )
 }
 
