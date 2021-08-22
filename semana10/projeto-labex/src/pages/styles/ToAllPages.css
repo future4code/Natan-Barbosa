@@ -38,3 +38,12 @@
     height: 40px;
     
 }
+
+.login-area {
+    border: 3px #0b0433 solid;
+   
+    margin: 15px 30vw 0 30vw;
+    padding: 10px 0px;
+    height: 40vh;
+    overflow: auto;
+}

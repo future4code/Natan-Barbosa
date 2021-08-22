@@ -1,21 +1,17 @@
-.container{
+#container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 
-    padding: 10px 3% 30px 3%;
+    padding: 30px 5% 30px 5%;
     margin: 0 3% 100px 3%;
 }
 
-#card-group {
+.card-group {
 
     border: 3px #0b0433 solid;
     background-color: white;
     color: #0b0433;
-    
-    display: grid;
-    grid-template-columns: 1fr;  
-    gap: 2%;
 
     padding: 2% 5%;
     border-radius: 15px;

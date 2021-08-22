@@ -4,6 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 import { Header } from '../components/header/Header';
 import { DefaultButton } from '../components/Buttons';
 import './styles/ToAllPages.css'
+import './styles/CreateTripPage.css'
 
 const Default = createGlobalStyle`
 * {
@@ -31,7 +32,7 @@ export const CreateTripPage = () => {
             </header>
 
             <main className="center-all font-default">
-                <br /><h1>Create Trip Page</h1><br />
+                <br /><h1>Criar Viagem</h1><br />
 
                 <section>
                     <DefaultButton onClick={goToPreviousPage}>Voltar</DefaultButton>
@@ -41,24 +42,22 @@ export const CreateTripPage = () => {
 
                     <div className="center-all">
 
-                        <form action="" className="form-area">
+                        <form action="" className="form-area-create">
                             <h1>Preencha o formulário abaixo:</h1>
 
                             <br />
 
-                            <input type="text" placeholder="Escolha a sua viagem" className="form-item" />
+                            <input type="text" placeholder="Título da viagem" className="form-item-create" />
                             <br />
-                            <input type="text" placeholder="Nome completo" className="form-item" />
+                            <input type="text" placeholder="Escolha um planeta" className="form-item-create" />
                             <br />
-                            <input type="number" placeholder="Idade" className="form-item" />
+                            <input type="date" className="form-item-create" />
                             <br />
-                            <textarea type="text" placeholder="Texto para candidatura" className="form-item" />
+                            <textarea type="text" placeholder="Descrição" className="form-item-create" />
                             <br />
-                            <input type="text" placeholder="Ocupação" className="form-item" />
+                            <input type="number" placeholder="Duração em dias" className="form-item-create" />
                             <br />
-                            <input type="text" placeholder="Escolha um país" className="form-item" />
-                            <br />
-                            <DefaultButton>Enviar</DefaultButton>
+                            <DefaultButton>Criar</DefaultButton>
                             <br />
 
                         </form>

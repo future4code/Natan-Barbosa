@@ -41,8 +41,6 @@ export const ListTripsPage = () => {
 
                     <DefaultButton onClick={goToHomePage}> Voltar </DefaultButton>
 
-                    
-
                 </section>
 
                 <section>

@@ -38,16 +38,35 @@ export const LoginPage = () => {
                 <br /><h1>Faça login para continuar:</h1><br />
 
                 <section>
-
                     <DefaultButton onClick={goToHomePage}> Voltar </DefaultButton>
                 </section>
 
+                <br />
+
                 <section>
-                    <div>
-                        Formuláio de login
+
+                    <div className="center-all">
+
+                        <form action="" className="login-area">
+
+                            <br />
+
+                            <input type="e-mail" placeholder="E-mail" className="form-item" />
+                            <br />
+                            <br />
+                            <input type="password" placeholder="Senha" className="form-item" />
+                            <br />
+                            <br />
+
+                            <DefaultButton onClick={goToAdminHomePage}> Entrar </DefaultButton>
+                            <br />
+
+                        </form>
+
                     </div>
-                    <DefaultButton onClick={goToAdminHomePage}> Entrar </DefaultButton>
+
                 </section>
+
             </main>
 
         </>

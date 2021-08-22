@@ -3,7 +3,8 @@ import { useHistory } from 'react-router';
 import { createGlobalStyle } from 'styled-components';
 import { Header } from '../components/header/Header';
 import { DefaultButton } from '../components/Buttons';
-import './styles/ToAllPages.css'
+import './styles/ToAllPages.css';
+import './styles/AdminHomePage.css';
 
 const Default = createGlobalStyle`
 * {
@@ -46,16 +47,46 @@ export const AdminHomePage = () => {
                     <DefaultButton onClick={goToLoginPage}> Voltar </DefaultButton>
 
                     <DefaultButton onClick={goToCreateTripPage}> Criar Viagem </DefaultButton>
+
+                    <DefaultButton > Logout </DefaultButton>
                 </section>
 
                 <section>
-                    <div>
-                        Cards de viagens criadas
+
+                    <div id='container'>
+
+                        <div className='card-group'>
+                            <h1>Título da Viagem</h1>
+                            <DefaultButton onClick={showTripDetails}>Ver Detalhes</DefaultButton>
+                        </div>
+
+                        <div className='card-group'>
+                            <h1>Título da Viagem</h1>
+                            <DefaultButton onClick={showTripDetails}>Ver Detalhes</DefaultButton>
+                        </div>
+
+                        <div className='card-group'>
+                            <h1>Título da Viagem</h1>
+                            <DefaultButton onClick={showTripDetails}>Ver Detalhes</DefaultButton>
+                        </div>
+
+                        <div className='card-group'>
+                            <h1>Título da Viagem</h1>
+                            <DefaultButton onClick={showTripDetails}>Ver Detalhes</DefaultButton>
+                        </div>
+                        
+                        <div className='card-group'>
+                            <h1>Título da Viagem</h1>
+                            <DefaultButton onClick={showTripDetails}>Ver Detalhes</DefaultButton>
+                        </div>
+
+                        <div className='card-group'>
+                            <h1>Título da Viagem</h1>
+                            <DefaultButton onClick={showTripDetails}>Ver Detalhes</DefaultButton>
+                        </div>
+               
                     </div>
 
-                    <DefaultButton onClick={showTripDetails}>
-                        Ver Detalhes da Viagem
-                    </DefaultButton>
                 </section>
 
             </main>
