@@ -1,0 +1,49 @@
+.center-all {
+    text-align: center;
+    margin: auto;
+}
+
+@font-face {
+    font-family: "Roboto"; 
+    src: url('../../assets/Roboto-Regular.ttf');
+}
+
+.font-default {
+    font-family: "Roboto";
+}
+
+#main-titles {
+    font-size: 25pt;
+    color: #0b0433;
+    margin: 12px 300px 5px 300px ;
+    padding: auto;
+}
+
+.form-area {
+    border: 3px #0b0433 solid;
+   
+    margin: 15px 30vw 0 30vw;
+    padding: 10px 0px;
+    height: 65vh;
+    overflow: auto;
+    
+}
+
+.form-item {
+    border: 2px #0b0433 solid;
+    
+    margin: 3px 0px;
+    padding: 2px 10px;
+    width: 30vw;
+    height: 40px;
+    
+}
+
+.login-area {
+    border: 3px #0b0433 solid;
+   
+    margin: 15px 30vw 0 30vw;
+    padding: 10px 0px;
+    height: 40vh;
+    overflow: auto;
+}
