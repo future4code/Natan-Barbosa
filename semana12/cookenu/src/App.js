@@ -1,10 +1,11 @@
 import React from "react";
+import { Router } from "./router/Router"
 
 function App() {
   return (
     <div>
       <div>
-        Teste do App React
+        <Router />
       </div>
     </div>
   );
