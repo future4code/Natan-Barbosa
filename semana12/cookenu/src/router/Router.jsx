@@ -6,10 +6,13 @@ import { ListaReceitas } from '../pages/ListaReceitas/ListaReceitas'
 import { Login } from '../pages/Login/Login'
 import { Erro } from '../pages/Erro/Erro'
 import { BrowserRouter, Switch, Route } from "react-router-dom"
+import { Header } from "../components/header/Header"
 
 export const Router = () => {
     return (
         <BrowserRouter>{/*inicia o router*/}
+
+        <Header />
 
             <Switch> {/*ordena as paginas e renderiza so a primeira Route*/}
 
