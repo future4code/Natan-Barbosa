@@ -6,7 +6,7 @@ import { useHistory } from "react-router";
 import useForm from "../../hooks/useForm";
 import { signUp } from "../../services/User";
 
-export const FormularioCadastro = () => { // import com chaves no router
+export const FormularioCadastro = ({setRightButton}) => { // import com chaves no router
 
     const history = useHistory()
 
@@ -15,7 +15,7 @@ export const FormularioCadastro = () => { // import com chaves no router
     const onSubmitForm = (event) => {
         
         event.preventDefault()
-        signUp(form, clear, history)
+        signUp(form, clear, history, setRightButton)
     }
 
     return (

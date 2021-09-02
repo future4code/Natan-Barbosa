@@ -5,43 +5,38 @@ import { DetalhesReceita } from '../pages/DetalhesReceita/DetalhesReceita'
 import { ListaReceitas } from '../pages/ListaReceitas/ListaReceitas'
 import { Login } from '../pages/Login/Login'
 import { Erro } from '../pages/Erro/Erro'
-import { BrowserRouter, Switch, Route } from "react-router-dom"
-import { Header } from "../components/header/Header"
+import { Switch, Route } from "react-router-dom"
 
-export const Router = () => {
+export const Router = ({setRightButton}) => {
     return (
-        <BrowserRouter>{/*inicia o router*/}
 
-        <Header />
+        <Switch> {/*ordena as paginas e renderiza so a primeira Route*/}
 
-            <Switch> {/*ordena as paginas e renderiza so a primeira Route*/}
+            <Route exact path={"/"}>
+                <ListaReceitas />
+            </Route>
 
-                <Route exact path={"/"}>
-                    <ListaReceitas />
-                </Route>
+            <Route exact path={"/Login"}> {/*abraça a pagina para o Switch fazer a troca*/}
+                <Login setRightButton={setRightButton} />
+            </Route>
 
-                <Route exact path={"/Login"}> {/*abraça a pagina para o Switch fazer a troca*/}
-                    <Login />
-                </Route>
+            <Route exact path={"/Cadastro"}>
+                <Cadastro setRightButton={setRightButton} />
+            </Route>
 
-                <Route exact path={"/Cadastro"}>
-                    <Cadastro />
-                </Route>
+            <Route exact path={"/AdicionarReceita"}>
+                <AdicionarReceita />
+            </Route>
 
-                <Route exact path={"/AdicionarReceita"}>
-                    <AdicionarReceita />
-                </Route>
+            <Route exact path={"/DetalhesReceita/:id"}>
+                <DetalhesReceita />
+            </Route>
 
-                <Route exact path={"/DetalhesReceita/:id"}>
-                    <DetalhesReceita />
-                </Route>
+            <Route>
+                <Erro /> {/*última página por ser o caso default*/}
+            </Route>
 
-                <Route>
-                    <Erro /> {/*última página por ser o caso default*/}
-                </Route>
+        </Switch>
 
-            </Switch>
-
-        </BrowserRouter>
     )
 }

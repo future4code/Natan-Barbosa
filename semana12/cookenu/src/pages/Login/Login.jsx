@@ -8,7 +8,7 @@ import { irParaCadastro } from "../../router/Coordinator";
 import { useHistory } from "react-router";
 import { useUnprotectedPage } from "../../hooks/useUnprotectedPage";
 
-export const Login = () => { // import com chaves no router
+export const Login = ({setRightButton}) => { // import com chaves no router
 
     useUnprotectedPage()
 
@@ -18,7 +18,7 @@ export const Login = () => { // import com chaves no router
         <ScreenContainer>
             <br />
             <LogoImage src={CookenuLogo} />
-            <FormularioLogin />
+            <FormularioLogin setRightButton={setRightButton} />
             <SignUpButtonContainer>
                 <Button
                     onClick={() => irParaCadastro(history)}

@@ -4,7 +4,7 @@ import { LogoImage, ScreenContainer } from "./styled";
 import { FormularioCadastro } from "./FormularioCadastro";
 import { useUnprotectedPage } from "../../hooks/useUnprotectedPage";
 
-export const Cadastro = () => { // import com chaves no router
+export const Cadastro = ({setRightButton}) => { // import com chaves no router
 
     useUnprotectedPage()
 
@@ -12,7 +12,7 @@ export const Cadastro = () => { // import com chaves no router
         <ScreenContainer>
             <br />
             <LogoImage src={CookenuLogo} />
-            <FormularioCadastro />
+            <FormularioCadastro setRightButton={setRightButton}/>
         </ScreenContainer>
     )
 }

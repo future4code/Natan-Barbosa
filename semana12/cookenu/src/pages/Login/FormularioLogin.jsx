@@ -7,13 +7,13 @@ import { login } from "../../services/User";
 import { useHistory } from "react-router-dom";
 
 
-export const FormularioLogin = () => { // import com chaves no router
+export const FormularioLogin = ({setRightButton}) => { // import com chaves no router
     const history = useHistory()
 
     const [form, onChange, clear] = useForm({ email: "", password: "" })
 
     const onSubmitForm = (event) => {
-        login(form, clear, history)
+        login(form, clear, history, setRightButton)
         event.preventDefault()
     }
 
