@@ -6,8 +6,11 @@ import Button from "@material-ui/core/Button";
 import { FormularioLogin } from "./FormularioLogin";
 import { irParaCadastro } from "../../router/Coordinator";
 import { useHistory } from "react-router";
+import { useUnprotectedPage } from "../../hooks/useUnprotectedPage";
 
 export const Login = () => { // import com chaves no router
+
+    useUnprotectedPage()
 
     const history = useHistory()
 
