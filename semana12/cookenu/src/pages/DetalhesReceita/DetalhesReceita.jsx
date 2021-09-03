@@ -5,6 +5,7 @@ import { useRequestData } from '../../hooks/useRequestData';
 import { BaseUrl } from '../../constants/Urls';
 import { RecipeContainer, RecipeImage, ScreenContainer } from "./styled";
 import { Typography } from "@material-ui/core";
+import { Loading } from "../../components/Loading/Loading";
 
 export const DetalhesReceita = () => { // import com chaves no router
     useProtectedPage()
@@ -14,7 +15,7 @@ export const DetalhesReceita = () => { // import com chaves no router
 
     return (
         <ScreenContainer>
-            {recipe && <RecipeContainer>
+            {recipe ? <RecipeContainer>
                 <RecipeImage src={recipe.image} />
                 <Typography
                     gutterBottom
@@ -26,7 +27,7 @@ export const DetalhesReceita = () => { // import com chaves no router
                     align={"justify"}
                     variant={"h6"}
                 >{recipe.description}</Typography>
-            </RecipeContainer>}
+            </RecipeContainer> : <Loading />}
         </ScreenContainer>
     )
 }

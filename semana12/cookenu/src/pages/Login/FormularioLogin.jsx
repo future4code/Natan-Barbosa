@@ -5,6 +5,8 @@ import Button from "@material-ui/core/Button";
 import useForm from "../../hooks/useForm"
 import { login } from "../../services/User";
 import { useHistory } from "react-router-dom";
+import { useState } from "react";
+import { CircularProgress } from "@material-ui/core";
 
 
 export const FormularioLogin = ({setRightButton}) => { // import com chaves no router
@@ -12,8 +14,10 @@ export const FormularioLogin = ({setRightButton}) => { // import com chaves no r
 
     const [form, onChange, clear] = useForm({ email: "", password: "" })
 
+    const [isLoading, setIsLoading] = useState(false)
+
     const onSubmitForm = (event) => {
-        login(form, clear, history, setRightButton)
+        login(form, clear, history, setRightButton, setIsLoading)
         event.preventDefault()
     }
 
@@ -49,7 +53,7 @@ export const FormularioLogin = ({setRightButton}) => { // import com chaves no r
                         variant={"contained"}
                         color={"primary"}
                         margin={"normal"}
-                    > Entrar </Button>
+                    > {isLoading? <CircularProgress color={"inherit"} size={24}/> : <>Entrar</>} </Button>
                 </form>
             </InputsContainer>
         </>

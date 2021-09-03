@@ -8,6 +8,7 @@ import { AddRecipeButton } from "./styled";
 import { Add } from "@material-ui/icons";
 import { irParaAdicionarReceita, irParaDetalhes } from "../../router/Coordinator";
 import { useHistory } from "react-router";
+import { Loading } from "../../components/Loading/Loading";
 
 export const ListaReceitas = () => { // import com chaves no router
     useProtectedPage()
@@ -31,7 +32,7 @@ export const ListaReceitas = () => { // import com chaves no router
 
     return (
         <RecipeListContainer>
-            {recipesCards}
+            {recipesCards.length > 0 ? recipesCards : <Loading />}
             <AddRecipeButton
                 color={"primary"}
             >

@@ -5,6 +5,9 @@ import { InputsContainer, SignUpFormContainer } from "./styled";
 import { useHistory } from "react-router";
 import useForm from "../../hooks/useForm";
 import { signUp } from "../../services/User";
+import { CircularProgress } from "@material-ui/core";
+import { useState } from "react";
+
 
 export const FormularioCadastro = ({setRightButton}) => { // import com chaves no router
 
@@ -12,10 +15,12 @@ export const FormularioCadastro = ({setRightButton}) => { // import com chaves n
 
     const [form, onChange, clear] = useForm({ name: "", email: "", password: "" })
 
+    const [isLoading, setIsLoading] = useState(false)
+
     const onSubmitForm = (event) => {
         
         event.preventDefault()
-        signUp(form, clear, history, setRightButton)
+        signUp(form, clear, history, setRightButton, setIsLoading)
     }
 
     return (
@@ -70,7 +75,7 @@ export const FormularioCadastro = ({setRightButton}) => { // import com chaves n
                         type={"submit"}
                         fullWidth
                     >
-                        Cadastrar
+                        {isLoading ? <CircularProgress color={"inherit"} size={24}/> : <>Cadastrar</>} 
                     </Button>
 
                 </SignUpFormContainer>

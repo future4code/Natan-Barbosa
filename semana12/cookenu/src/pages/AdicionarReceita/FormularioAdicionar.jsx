@@ -7,17 +7,20 @@ import { InputsContainer } from './styled';
 import { AddRecipeFormContainer } from './styled';
 
 import { criarReceita } from '../../services/Recipe';
+import { useState } from 'react';
 
-
+import { CircularProgress } from "@material-ui/core";
 
 export const AddRecipeForm = () => {
     
     const [form, onChange, clear] = useForm({ title: "", description: "", image: "" })
 
+    const [isLoading, setIsLoading] = useState(false)
+
   
     const onSubmitForm = (event) => {
         event.preventDefault()
-        criarReceita(form, clear)
+        criarReceita(form, clear, setIsLoading)
     }
 
     return (
@@ -65,7 +68,7 @@ export const AddRecipeForm = () => {
                     variant={"contained"}
                     type={"submit"}
                     fullWidth
-                >Adicionar receita
+                >{isLoading? <CircularProgress color={"inherit"} size={24}/> : <>Adicionar</>}
                 </Button>
             </AddRecipeFormContainer>
         </form>
