@@ -3,7 +3,7 @@ import { Router } from "./router/Router"
 import { ThemeProvider } from "@material-ui/styles";
 import TemaMaterial from "./constants/TemaMaterial"
 import { useState } from "react";
-import { Header } from "./components/header/Header";
+import { Header } from "./components/Header/Header";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {

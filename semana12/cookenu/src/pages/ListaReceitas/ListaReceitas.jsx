@@ -6,7 +6,7 @@ import { BaseUrl } from "../../constants/Urls";
 import { RecipeListContainer } from "./styled";
 import { AddRecipeButton } from "./styled";
 import { Add } from "@material-ui/icons";
-import { irParaAdicionarReceita } from "../../router/Coordinator";
+import { irParaAdicionarReceita, irParaDetalhes } from "../../router/Coordinator";
 import { useHistory } from "react-router";
 
 export const ListaReceitas = () => { // import com chaves no router
@@ -14,8 +14,8 @@ export const ListaReceitas = () => { // import com chaves no router
     const recipes = useRequestData([], `${BaseUrl}/recipe/feed`)
     const history = useHistory()
 
-    const onClickCard = () => {
-        console.log("teste")
+    const onClickCard = (id) => {
+        irParaDetalhes(history, id)
     }
 
     const recipesCards = recipes.map((recipe) => {
@@ -24,7 +24,7 @@ export const ListaReceitas = () => { // import com chaves no router
                 key={recipe.recipe_id}
                 title={recipe.title}
                 image={recipe.image}
-                onClick={onClickCard()}
+                onClick={() => onClickCard(recipe.recipe_id)}
             />
         )
     })
