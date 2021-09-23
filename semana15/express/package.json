@@ -1,0 +1,18 @@
+{
+  "name": "introducao-typescript",
+  "version": "1.0.0",
+  "description": "atividades da aula de introdução ao typescript",
+  "main": "./index.js",
+  "scripts": {
+    "setup":"mkdir build && mkdir src && tsc --init",
+    "start":"tsc && node ./build/index.js"
+
+  },
+  "keywords": ["typescript","node","backend"],
+  "author": "Natan Benfica Barbosa. Estudante de Desenvolvimento Web Full-Stack na Labenu",
+  "license": "ISC"
+}
+
+
+
+
