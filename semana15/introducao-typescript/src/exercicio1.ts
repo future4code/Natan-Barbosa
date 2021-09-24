@@ -60,7 +60,7 @@ const quartaPessoa: pessoa = {
     corFavorita: "Vermelho"
 }
 
-// D) Modifique o tipo de um objeto para que possamos apenas escolher entre as cores do arco-íris. Utilize um `enum` para isso.
+// (D) Modifique o tipo de um objeto para que possamos apenas escolher entre as cores do arco-íris. Utilize um `enum` para isso.
 
 enum coresPadrao {
     AMARELO = "#e7eb09",
