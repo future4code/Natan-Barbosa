@@ -1,4 +1,3 @@
-console.log(`Aopa!`)
 console.log(`
 
 Setup do tsconfig.json:
