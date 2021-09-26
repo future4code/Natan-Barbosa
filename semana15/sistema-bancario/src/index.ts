@@ -1,5 +1,8 @@
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
+import { accounts } from "./accounts";
+
+
 
 const app = express()
 
