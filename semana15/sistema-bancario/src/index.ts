@@ -19,8 +19,15 @@ app.post("/users/create", (req: Request, res: Response) => {
 
     try {
         const { name, cpf, dateAsString } = req.body
-        const [day, month, age] = dateAsString.split("/")
-        const date: Date = new Date(`${age}-${month}-${day}`)
+        const [day, month, birthday] = dateAsString.split("/")
+        const date: Date = new Date(`${birthday}-${month}-${day}`)
+        const ageMilisseconds: number = Date.now() - date.getTime()
+        const ageYears: number = ageMilisseconds / 1000 / 60 / 60 / 24 / 365
+
+        if(ageYears <= 18) {
+            res.statusCode = 406
+            throw new Error("Idade precisa ser maior ou igual a 18 anos")
+        }
 
         accounts.push({
             name: name,
@@ -34,7 +41,7 @@ app.post("/users/create", (req: Request, res: Response) => {
     } catch (error: any) {
 
         console.log(error)
-        res.status(400).send(error.message)
+        res.send(error.message)
 
     }
 })
