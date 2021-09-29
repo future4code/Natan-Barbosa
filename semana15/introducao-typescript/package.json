@@ -1,0 +1,26 @@
+{
+  "name": "introducao-typescript",
+  "version": "1.0.0",
+  "description": "atividades da aula de introdução ao typescript",
+  "main": "./index.js",
+  "scripts": {
+    "setup": "mkdir build && mkdir src && tsc --init",
+    "start": "node ./index.js",
+    "exercicio1": "tsc && node ./build/exercicio1.js",
+    "exercicio2": "tsc && node ./build/exercicio2.js",
+    "exercicio3": "tsc && node ./build/exercicio3.js",
+    "exercicio4": "tsc && node ./build/exercicio4.js",
+    "exercicio5": "tsc && node ./build/exercicio5.js",
+    "transpilar-tudo": "cd src && tsc"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "backend"
+  ],
+  "author": "Natan Benfica Barbosa. Estudante de Desenvolvimento Web Full-Stack na Labenu",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.9.6"
+  }
+}
