@@ -1,0 +1,14 @@
+{
+  "name": "aula-node",
+  "version": "1.0.0",
+  "description": "aula de introducao ao Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "exercicio1": "node ./exercicio1.js",
+    "exercicio2": "node ./exercicio2.js",
+    "exercicio3": "node ./exercicio3.js"
+  },
+  "author": "Natan Benfica Barbosa, estudante de Desenvolvimento Web Full-Stack na Labenu",
+  "license": "ISC"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "exercicio3",
+  "version": "1.0.0",
+  "description": "esse programa acrescenta uma tarefa a uma lista de tarefas pré-existente",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [
+    "node.js",
+    "scripts"
+  ],
+  "author": "Natan Benfica Barbosa, estudante de Desenvolvimento Web Full-Stack na Labenu",
+  "license": "ISC"
+}

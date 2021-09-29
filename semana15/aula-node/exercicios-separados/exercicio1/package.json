@@ -1,0 +1,18 @@
+{
+  "name": "exercicio1",
+  "version": "1.0.0",
+  "description": "esse programa imprime seu nome, sua idade atual e sua idade daqui a 7 anos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [
+    "node.js",
+    "scripts"
+  ],
+  "author": "Natan Benfica Barbosa, estudante de Desenvolvimento Web Full-Stack na Labenu",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}

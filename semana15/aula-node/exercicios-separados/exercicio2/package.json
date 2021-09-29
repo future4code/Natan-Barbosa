@@ -1,0 +1,18 @@
+{
+  "name": "exercicio2",
+  "version": "1.0.0",
+  "description": "esse programa realiza as quatro operações básicas da matemática com dois numerais de input",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [
+    "node.js",
+    "scripts"
+  ],
+  "author": "Natan Benfica Barbosa, estudante de Desenvolvimento Web Full-Stack na Labenu",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
