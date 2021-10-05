@@ -1,0 +1,17 @@
+{
+  "name": "template_setup_backend",
+  "version": "1.0.0",
+  "description": "Setup básico de Node.js e Typescript para início de projetos em Back-end",
+  "main": "./index.js",
+  "scripts": {
+    "start":"tsc && node ./build/index.js"
+
+  },
+  "keywords": ["typescript","node","backend","back-end"],
+  "author": "Natan Benfica Barbosa. Estudante de Desenvolvimento Web Full-Stack",
+  "license": "ISC"
+}
+
+
+
+
