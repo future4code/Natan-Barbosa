@@ -1,0 +1,8 @@
+Objetivo:
+- construir uma API que consome os dados do Pokémon Go que estão em Excel
+
+Requisitos da API:
+- conter listagens
+- permitir busca
+- conter paginação
+- permitir filtros
