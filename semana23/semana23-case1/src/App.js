@@ -1,9 +1,10 @@
-import react from "react";
+import React from "react";
+import AppRouter from "./coordinator/AppRouter";
 
 const App = () => {
   return (
     <div>
-      SISTEMA IM-EX PORTO
+      <AppRouter />
     </div>
   );
 }
