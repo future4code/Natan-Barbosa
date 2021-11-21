@@ -56,7 +56,7 @@ const ManagePage = () => {
                         <option value="Africa do Sul">África do Sul</option>
                         <option value="Brasil">Brasil</option>
                         <option value="China">China</option>
-                        <option value="França">França</option>
+                        <option value="Franca">França</option>
                         <option value="Portugal">Portugal</option>
                         <option value="Espanha">Espanha</option>
                         <option value="Estados Unidos">Estados Unidos</option>
@@ -103,15 +103,15 @@ const ManagePage = () => {
 
                     <br /> <br />
 
-                    <label for="operation">Tipo de Operação</label>
+                    <label for="operation">Fase da Operação</label>
                     <select name="operation" id="operation">
                         <option value="">Selecionar...</option>
-                        <option value="boarding">Embarque</option>
-                        <option value="discharge">Descarga</option>
+                        <option value="embarque">Embarque</option>
+                        <option value="descarga">Descarga</option>
                         <option value="gate-in">Gate In</option>
                         <option value="gate-out">Gate Out</option>
-                        <option value="weighing">Pesagem</option>
-                        <option value="repositioning">Reposicionamento</option>
+                        <option value="pesagem">Pesagem</option>
+                        <option value="reposicionamento">Reposicionamento</option>
                         <option value="scanner">Scanner</option>
                     </select>
 
@@ -127,7 +127,7 @@ const ManagePage = () => {
 
                     <br /> <br />
 
-                    <div>Fim da Operação</div>
+                    <div>Conclusão Prevista</div>
 
                     <label for="dateFinish">Data</label>
                     <input

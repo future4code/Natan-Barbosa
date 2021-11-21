@@ -25,13 +25,6 @@ type PostForm = {
     dateFinish: String
 }
 
-const throwNewError = (error: any): any => {
-    throw {
-        errorId: error.name,
-        errorLog: error.message
-    }
-}
-
 app.get("/", (req: Request, res: Response) => {})
 
 app.post("/new-register", (req: Request, res: Response) => {

@@ -1,4 +1,4 @@
-let idNum = 0
+let idNum = 3
 export const idCounter = (): Number => {
     const newId: Number = idNum + 1
     idNum++
