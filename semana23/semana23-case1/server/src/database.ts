@@ -1,9 +1,9 @@
 type PostForm = {
     id: Number,
+    conteinerNum: String,
     client: String,
     transporter: String,
     totalCargoValue: Number,
-    conteinerNum: String,
     country: String,
     conteinerType: Number,
     conteinerStatus: String,
@@ -13,4 +13,4 @@ type PostForm = {
     dateFinish: String
 }
 
-export const dbTemporary: PostForm[]  = []
+export const database: PostForm[]  = []

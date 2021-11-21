@@ -1,8 +1,7 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
-import { dbTemporary } from "./dbTemporary";
-import { dbConnection } from "./dbConnection";
-import { idCounter, getConteinerNum } from "./test";
+import { database } from "./database";
+import { idCounter, getConteinerNum } from "./functions";
 
 const app = express()
 const port: Number = 4000
@@ -33,40 +32,49 @@ const throwNewError = (error: any): any => {
     }
 }
 
-// funcoes
+app.get("/", (req: Request, res: Response) => {})
 
 app.post("/new-register", (req: Request, res: Response) => {
-    try {
-        const typedTotalCargoValue: Number = Number(req.body.totalCargoValue)
-        const typedConteinerType: Number = Number(req.body.conteinerType)
-        const formValues: PostForm = req.body
-        formValues.totalCargoValue = typedTotalCargoValue
-        formValues.conteinerType = typedConteinerType
 
-        let order: Number = idCounter()
+    const num = idCounter()
+    const newId = num
+    const newConteinerNum = getConteinerNum(num)
+    const typedTotalCargoValue: Number = Number(req.body.totalCargoValue)
+    const typedConteinerType: Number = Number(req.body.conteinerType)
 
-        dbConnection.raw(`
-            INSERT INTO all-conteiners (id, client, transporter, totalCargoValue, conteinerNum, country, conteinerType, conteinerStatus, finality, operation, dateInitial, dateFinish)
-            VALUES ( ${order}, "${req.body.client}", "${req.body.transporter}", ${req.body.totalCargoValue}, "${getConteinerNum(order)}", "${req.body.country}", ${req.body.conteinerType}, "${req.body.conteinerStatus}", "${req.body.finality}", "${req.body.operation}", "${req.body.dateInitial}", "${req.body.dateFinish}");
-        `)
-
-        res.status(200)
-        res.send(
-            `
-            <h1>CONFIRMAÇÃO</h1>
-            <br/>
-            <div>Novo registro criado com sucesso! </div>
-            <div> Você já pode fechar essa guia.</div>
-            `
-        )
-
-        dbTemporary.push(formValues)
-    } catch (error) {
-        throwNewError(error)
+    const formValues: PostForm = {
+        id: newId,
+        conteinerNum: newConteinerNum,
+        client: req.body.client,
+        transporter: req.body.transporter,
+        totalCargoValue: typedTotalCargoValue,
+        country: req.body.country,
+        conteinerType: typedConteinerType,
+        conteinerStatus: req.body.conteinerStatus,
+        finality: req.body.finality,
+        operation: req.body.operation,
+        dateInitial: req.body.dateInitial,
+        dateFinish: req.body.dateFinish
     }
 
-    console.log(dbTemporary)
+    database.push(formValues)
+
+    console.log(database)
+
+    res.status(200)
+    res.send(
+        `
+            <h1>CONFIRMAÇÃO</h1>
+            <hr/><br/>
+            <h3>Novo registro criado com sucesso!</h3>
+            <h3>Você já pode fechar essa guia.</h3>
+        `
+    )
 })
+
+app.put("/", (req: Request, res: Response) => {})
+
+app.delete("/", (req: Request, res: Response) => {})
 
 app.listen(port, () => {
     console.log(`
