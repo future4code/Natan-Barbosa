@@ -25,8 +25,8 @@ export const database: PostForm[] = [
         conteinerStatus: 'full',
         finality: "export",
         operation: "scanner",
-        dateInitial: "2021/11/22",
-        dateFinish: "2021/11/30"
+        dateInitial: "2021-11-22",
+        dateFinish: "2021-11-30"
     },
     {
         id: 2,
@@ -39,8 +39,8 @@ export const database: PostForm[] = [
         conteinerStatus: 'full',
         finality: "import",
         operation: "descarga",
-        dateInitial: "2021/11/23",
-        dateFinish: "2021/11/28"
+        dateInitial: "2021-11-23",
+        dateFinish: "2021-11-28"
     },
     {
         id: 3,
@@ -53,7 +53,14 @@ export const database: PostForm[] = [
         conteinerStatus: 'empty',
         finality: "import",
         operation: "embarque",
-        dateInitial: "2021/11/22",
-        dateFinish: "2021/11/27"
+        dateInitial: "2021-11-22",
+        dateFinish: "2021-11-27"
     },
 ]
+
+export const deleteRegister = (id: Number): any => {
+    const item = Number(id) - 1
+    const register = database[item]
+    delete database[item]
+    return register
+}

@@ -5,24 +5,27 @@ import { FormArea } from "./styled.jsx"
 const ManagePage = () => {
     return (
         <div>
-            <div>
+            <header>
                 <h1>Sistema Im-Ex Porto</h1>
                 <h3>Módulo MCONT221121 - Gerenciamento de Contêiners</h3>
-            </div>
+                <div>
+                    <button>
+                        <Link to="/" >Voltar</ Link>
+                    </button>
+                </div>
+            </header>
 
             <hr />
-
-            <div>
-                <button>
-                    <Link to="/" >Voltar</ Link>
-                </button>
-            </div>
 
             <br />
 
             <div>
 
+
+
                 <FormArea action="http://localhost:4000/new-register" method="POST" target="_blank">
+
+
 
                     <label for="client">Cliente: </label>
                     <select name="client">

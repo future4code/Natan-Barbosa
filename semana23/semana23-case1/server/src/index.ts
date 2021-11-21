@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
-import { database } from "./database";
+import { database, deleteRegister } from "./database";
 import { idCounter, getConteinerNum } from "./functions";
 
 const app = express()
@@ -25,7 +25,15 @@ type PostForm = {
     dateFinish: String
 }
 
-app.get("/", (req: Request, res: Response) => {})
+app.get("/all-registers", (req: Request, res: Response) => {
+    res.send(database)
+})
+
+app.delete("/all-registers/:id", (req: Request, res: Response) => {
+    const idConteiner = Number(req.params.id)
+    deleteRegister(idConteiner)
+    res.send(`O registro desse Conteiner foi deletado da base de dados.`)
+})
 
 app.post("/new-register", (req: Request, res: Response) => {
 
@@ -61,13 +69,9 @@ app.post("/new-register", (req: Request, res: Response) => {
             <hr/><br/>
             <h3>Novo registro criado com sucesso!</h3>
             <h3>Você já pode fechar essa guia.</h3>
-        `
+            `
     )
 })
-
-app.put("/", (req: Request, res: Response) => {})
-
-app.delete("/", (req: Request, res: Response) => {})
 
 app.listen(port, () => {
     console.log(`

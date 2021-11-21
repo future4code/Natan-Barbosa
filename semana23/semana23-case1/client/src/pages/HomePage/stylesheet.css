@@ -1,0 +1,14 @@
+.links {
+    text-decoration: none;
+    font-size: 200%;
+}
+
+.botoes {
+    height: 7em;
+    width: 20em;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+}
