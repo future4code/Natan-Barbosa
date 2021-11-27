@@ -1,0 +1,11 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.visualizar {
+    border: 1px solid black;
+}
+
