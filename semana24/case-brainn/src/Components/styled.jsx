@@ -18,7 +18,7 @@ export const MsButton = styled.button`
         border: solid 2px white;
         padding: 5px;
         margin: 5px;
-        border-radius: 25px;
+        
         width: 100px;
     }
     &:hover {
@@ -28,7 +28,7 @@ export const MsButton = styled.button`
     }
     &:active {
         background-color: #2e9e5d;
-        color: white;
+        color: black;
         border: solid 2px white;
     }
 `
@@ -41,7 +41,7 @@ export const QuinaButton = styled.button`
         border: solid 2px white;
         padding: 5px;
         margin: 5px;
-        border-radius: 25px;
+        
         width: 100px;
     }
     &:hover {
@@ -64,7 +64,7 @@ export const LfButton = styled.button`
         border: solid 2px white;
         padding: 5px;
         margin: 5px;
-        border-radius: 25px;
+        
         width: 100px;
     }
     &:hover {
@@ -87,7 +87,7 @@ export const LmButton = styled.button`
         border: solid 2px white;
         padding: 5px;
         margin: 5px;
-        border-radius: 25px;
+        
         width: 100px;
     }
     &:hover {
@@ -97,7 +97,7 @@ export const LmButton = styled.button`
     }
     &:active {
         background-color: #f58d36;
-        color: white;
+        color: black;
         border: solid 2px white;
     }
 `
@@ -109,7 +109,7 @@ export const DdsButton = styled.button`
         border: solid 2px white;
         padding: 5px;
         margin: 5px;
-        border-radius: 25px;
+        
         width: 100px;
     }
     &:hover {
@@ -119,7 +119,7 @@ export const DdsButton = styled.button`
     }
     &:active {
         background-color: #70674c;
-        color: white;
+        color: black;
         border: solid 2px white;
     }
 `
@@ -132,7 +132,7 @@ export const TmButton = styled.button`
         border: solid 2px white;
         padding: 5px;
         margin: 5px;
-        border-radius: 25px;
+        
         width: 100px;
     }
     &:hover {
