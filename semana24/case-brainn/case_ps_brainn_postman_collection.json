@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "84e1041a-8afd-4a1e-8b3e-80b7caf9117b",
+		"name": "Case de PS da Brainn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Loterias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://brainn-api-loterias.herokuapp.com/api/v1/loterias",
+					"protocol": "https",
+					"host": [
+						"brainn-api-loterias",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"loterias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Concurso Disponível",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://brainn-api-loterias.herokuapp.com/api/v1/loterias-concursos",
+					"protocol": "https",
+					"host": [
+						"brainn-api-loterias",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"loterias-concursos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resultado do Concurso",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://brainn-api-loterias.herokuapp.com/api/v1/concursos/1622",
+					"protocol": "https",
+					"host": [
+						"brainn-api-loterias",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"concursos",
+						"1622"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
