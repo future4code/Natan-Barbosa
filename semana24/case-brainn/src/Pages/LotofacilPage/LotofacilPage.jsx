@@ -1,6 +1,6 @@
 import React from "react";
 
-export const TimemaniaPage = () => {
+const LotofacilPage = () => {
     return (
         <div >
             
@@ -21,3 +21,5 @@ export const TimemaniaPage = () => {
         </div>
     )
 }
+
+export default LotofacilPage

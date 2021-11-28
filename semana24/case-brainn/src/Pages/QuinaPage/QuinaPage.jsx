@@ -1,6 +1,6 @@
 import React from "react";
 
-export const QuinaPage = () => {
+const QuinaPage = () => {
     return (
         <div >
             
@@ -21,3 +21,5 @@ export const QuinaPage = () => {
     </div>
     )
 }
+
+export default QuinaPage

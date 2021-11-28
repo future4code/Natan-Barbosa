@@ -1,6 +1,6 @@
 import React from "react";
 
-export const MegaSenaPage = () => {
+const MegaSenaPage = () => {
     return (
         <div >
             
@@ -22,3 +22,4 @@ export const MegaSenaPage = () => {
     )
 }
 
+export default MegaSenaPage

@@ -1,10 +1,10 @@
 import React from "react";
 import "./stylesheet.css"
 
-export const DiaDeSortePage = () => {
+const DiaDeSortePage = () => {
     return (
         <div className="content">
-            
+
             <div className="visualizar">
                 <select>
                     <option>Mega-Sena</option>
@@ -16,8 +16,8 @@ export const DiaDeSortePage = () => {
                 </select>
             </div>
 
-            <div>Mega-Sena</div>      
-            
+            <div>Mega-Sena</div>
+
             <div className="visualizar">
                 <li>31</li>
                 <li>32</li>
@@ -26,7 +26,7 @@ export const DiaDeSortePage = () => {
                 <li>43</li>
                 <li>51</li>
             </div>
-        
+
             <div className="visualizar">
                 <h4>Concurso</h4>
                 <div>2359 - 21/11/2021</div>
@@ -37,3 +37,5 @@ export const DiaDeSortePage = () => {
         </div>
     )
 }
+
+export default DiaDeSortePage
