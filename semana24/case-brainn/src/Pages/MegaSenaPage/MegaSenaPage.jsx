@@ -1,22 +1,11 @@
 import React from "react";
+import "./stylesheet.css";
 
 const MegaSenaPage = () => {
     return (
-        <div >
+        <div className="mega-sena">
             
-            <div>
-                Seletor de concurso.
-            </div>
-            
-            <div>
-                <div>Nome do concurso.</div>
-                <div>Números sorteados.</div>
-            </div>
-            
-            <div>
-                <div>Informações do concurso</div>
-                <div>Aviso</div>
-            </div>
+            Mega Sena Page
 
         </div>
     )

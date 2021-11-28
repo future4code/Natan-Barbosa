@@ -1,11 +1,5 @@
-.content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
+.dia-de-sorte {
+    background-color: #BFAF83;
+    color: black;
+    height: 100vh;
 }
-
-.visualizar {
-    border: 1px solid black;
-}
-
