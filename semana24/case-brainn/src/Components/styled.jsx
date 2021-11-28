@@ -23,7 +23,7 @@ export const MsButton = styled.button`
     }
     &:hover {
         background-color: #6BEFA3;
-        color: white;
+        color: black;
         border: solid 2px white;
     }
     &:active {
@@ -92,7 +92,7 @@ export const LmButton = styled.button`
     }
     &:hover {
         background-color: #FFAB64;
-        color: white;
+        color: black;
         border: solid 2px white;
     }
     &:active {
@@ -114,7 +114,7 @@ export const DdsButton = styled.button`
     }
     &:hover {
         background-color: #BFAF83;
-        color: white;
+        color: black;
         border: solid 2px white;
     }
     &:active {
