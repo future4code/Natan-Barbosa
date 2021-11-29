@@ -21,17 +21,19 @@ app.post("/new-payment", (req: Request, res: Response) => {
         id: getIdSequency(id),
         buyerName: req.body.buyerName,
         buyerEmail: req.body.buyerEmail,
-        buyerCPF: req.body.buyerCPF,
+        buyerCPF: Number(req.body.buyerCPF),
         pmtAmount: req.body.pmtAmount,
         pmtType: req.body.pmtType,
         pmtIsCard: req.body.pmtIsCard,
         cardHolderName: req.body.cardHolderName,
-        cardNumber: req.body.cardNumber,
+        cardNumber: Number(req.body.cardNumber),
         cardExpDate: req.body.cardExpDate,
-        cardCVV: req.body.cardCVV
+        cardCVV: Number(req.body.cardCVV)
     }
 
-    data.push(newPayment)
+    console.log(req.body)
+
+    // data.push(newPayment)
     
     res.status(200)
     res.send("Novo pagamento registrado com sucesso.")
